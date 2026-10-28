@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { --background: 170 20% 12%; --foreground: 55 25% 92%; --card: 171 20% 15%; --card-foreground: 55 25% 92%; --popover: 171 20% 15%; --popover-foreground: 55 25% 92%; --primary: 47 79% 70%; --primary-foreground: 171 20% 13%; --secondary: 171 15% 22%; --secondary-foreground: 55 25% 92%; --muted: 171 15% 22%; --muted-foreground: 163 14% 67%; --accent: 171 15% 25%; --accent-foreground: 55 25% 92%; --destructive: 0 60% 55%; --destructive-foreground: 0 0% 98%; --border: 170 14% 30%; --input: 170 14% 30%; --ring: 47 79% 70%; --radius: .25rem; }
+  * { @apply border-border; box-sizing: border-box; }
+  body { margin: 0; font-family: 'DM Sans', sans-serif; background: #173b3c; color: #f2f0db; -webkit-font-smoothing: antialiased; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  button { font-family: inherit; }
+  button:focus-visible, a:focus-visible { outline: 2px solid #edce82; outline-offset: 5px; }
+  button:disabled { cursor: not-allowed; opacity: .5; }
+  ::selection { background: #e7cb88; color: #24433f; }
+}

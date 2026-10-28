@@ -1,0 +1,68 @@
+.shop-wallet{display:flex;flex-direction:column;align-items:center;gap:6px;margin:-4px auto 4px}
+.shop-balance span{margin-left:6px;font-family:var(--pixel);font-size:9px;color:#8b6420}
+.shop-price{font-size:11px;font-weight:700;color:#5a4a2a;letter-spacing:.02em}
+.shop-price small{font-weight:600;color:#9a8460;text-transform:uppercase;font-size:9px}
+.shop-yield span em{display:block;font-style:normal;font-size:9px;color:#9a7a30;margin-top:2px}
+.shop-pending{display:flex;align-items:center;justify-content:center;gap:8px;margin:8px 0 0;font-family:var(--pixel);font-size:9px;color:#8b6420}
+.inv-earnings{display:grid;grid-template-columns:repeat(3,1fr) auto;gap:10px;align-items:center;padding:12px 14px;margin-bottom:12px;border-radius:14px;background:linear-gradient(180deg,#fffdf4,#f7e6be);border:3px solid var(--wood);box-shadow:inset 0 2px 0 #fff,0 4px 0 var(--wood)}
+.inv-earnings>div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.inv-earnings small{font-family:var(--pixel);font-size:8px;letter-spacing:.08em;color:#94703c}
+.inv-earnings strong{font-family:var(--pixel);font-size:16px;color:#2b1b06}
+.inv-earnings span{font-size:10px;color:#7a6240;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.inv-claim{height:54px;min-width:150px}
+.stat-button{cursor:pointer;text-align:left;font:inherit}
+.stat-button:focus-visible{outline:3px solid #ffd666;outline-offset:2px}
+@media(max-width:760px){.inv-earnings{grid-template-columns:1fr 1fr}.inv-claim{grid-column:span 2;width:100%}}
+
+/* Admin panel */
+.admin-page{min-height:100vh;background:#0f1a1c;color:#e6efe9;font-family:'Space Grotesk',system-ui,sans-serif;padding:40px 20px 80px}
+.admin-shell{max-width:1040px;margin:0 auto;display:grid;gap:24px}
+.admin-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;border-bottom:1px solid #22383a;padding-bottom:16px}
+.admin-head h1{font-family:var(--pixel,monospace);font-size:20px;letter-spacing:.06em;color:#a6e2c2;margin:0}
+.admin-head p{margin:4px 0 0;color:#89a69a;font-size:13px}
+.admin-card{background:#142527;border:1px solid #24403f;border-radius:14px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.admin-card h2{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#a6e2c2;margin:0 0 14px}
+.admin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.admin-field{display:flex;flex-direction:column;gap:6px}
+.admin-field label{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#89a69a}
+.admin-field input{background:#0c1617;border:1px solid #2c4a49;color:#e6efe9;border-radius:8px;padding:10px 12px;font:inherit;font-size:14px;transition:border-color .15s}
+.admin-field input:focus{outline:none;border-color:#a6e2c2}
+.admin-field small{color:#6f8c82;font-size:11px}
+.admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;align-items:center}
+.admin-btn{background:#a6e2c2;color:#0f1a1c;border:0;border-radius:999px;padding:10px 18px;font-weight:700;cursor:pointer;transition:transform .15s,background-color .15s}
+.admin-btn:hover{transform:translateY(-1px);background:#bdf0d4}
+.admin-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.admin-btn.ghost{background:transparent;color:#a6e2c2;border:1px solid #2c4a49}
+.admin-stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.admin-stat{background:#0c1617;border:1px solid #24403f;border-radius:10px;padding:14px}
+.admin-stat small{display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#6f8c82}
+.admin-stat strong{display:block;font-size:20px;margin-top:4px;color:#f2fff7}
+.admin-stat span{font-size:11px;color:#89a69a}
+.admin-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
+.admin-table th{text-align:left;color:#6f8c82;font-weight:600;padding:6px 8px;border-bottom:1px solid #24403f;font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+.admin-table td{padding:7px 8px;border-bottom:1px solid #1b3031;color:#d4e3dc;font-variant-numeric:tabular-nums}
+.admin-table a{color:#a6e2c2}
+.admin-msg{padding:10px 14px;border-radius:8px;font-size:13px}
+.admin-msg.ok{background:#15382b;color:#a6e2c2}.admin-msg.err{background:#3a1c1c;color:#ffb4b4}
+.admin-login{max-width:380px;margin:10vh auto 0}
+.admin-badge{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;font-size:11px;background:#15382b;color:#a6e2c2}
+.admin-badge.warn{background:#3a2d12;color:#ffd666}
+.admin-card-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}.admin-card-head h2{margin:0}
+.admin-hint{margin:0;color:#89a69a;font-size:12px;line-height:1.5}.admin-hint.warn{color:#ffd666;margin-top:12px}
+.admin-access{display:grid;gap:14px}.admin-access-row{display:grid;grid-template-columns:minmax(260px,2fr) minmax(200px,1fr);gap:14px;align-items:stretch}
+@media (max-width:720px){.admin-access-row{grid-template-columns:1fr}}
+.admin-toggle{display:flex;align-items:center;gap:14px;background:#0c1617;border:1px solid #24403f;border-radius:10px;padding:14px 16px;cursor:pointer;transition:border-color .15s,background-color .15s;user-select:none}
+.admin-toggle:hover{border-color:#2c4a49}.admin-toggle.on{border-color:#3f7f66;background:#10211f}.admin-toggle input{position:absolute;opacity:0;pointer-events:none}
+.admin-switch{flex:none;width:42px;height:24px;border-radius:999px;background:#2c4a49;position:relative;transition:background-color .2s}.admin-switch:after{content:'';position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#89a69a;transition:transform .2s,background-color .2s}
+.admin-toggle.on .admin-switch{background:#a6e2c2}.admin-toggle.on .admin-switch:after{transform:translateX(18px);background:#0f1a1c}
+.admin-toggle-text{display:flex;flex-direction:column;gap:3px;flex:1}.admin-toggle-text strong{font-size:14px;color:#f2fff7}.admin-toggle-text small{color:#89a69a;font-size:11px;line-height:1.4}
+.admin-toggle em{font-style:normal;font-size:11px;font-weight:700;letter-spacing:.08em;color:#6f8c82}.admin-toggle.on em{color:#a6e2c2}
+.admin-fee{background:#0c1617;border:1px solid #24403f;border-radius:10px;padding:14px 16px;justify-content:center}.admin-fee.muted{opacity:.5}.admin-fee input:disabled{cursor:not-allowed}
+.admin-filter{background:#0c1617;border:1px solid #2c4a49;color:#e6efe9;border-radius:999px;padding:8px 14px;font:inherit;font-size:13px;margin-left:auto;min-width:200px}.admin-filter:focus{outline:none;border-color:#a6e2c2}
+.admin-scroll{max-height:360px;overflow:auto;margin-top:12px;border:1px solid #1b3031;border-radius:10px}.admin-scroll .admin-table{margin:0}.admin-table td.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;word-break:break-all}
+.admin-icon-btn{background:transparent;border:1px solid #2c4a49;color:#ffb4b4;border-radius:6px;width:26px;height:26px;display:inline-grid;place-items:center;cursor:pointer;transition:background-color .15s}.admin-icon-btn:hover{background:#3a1c1c}.admin-icon-btn:disabled{opacity:.4;cursor:not-allowed}
+.admin-nft-col{display:flex;flex-direction:column;gap:14px;min-width:0}
+.admin-nft{display:flex;gap:14px;background:#0c1617;border:1px solid #3f7f66;border-radius:10px;padding:12px}.admin-nft-img{width:72px;height:72px;border-radius:8px;object-fit:cover;flex:none;background:#142527}.admin-nft-img.placeholder{border:1px dashed #2c4a49}
+.admin-nft-body{display:flex;flex-direction:column;gap:4px;min-width:0}.admin-nft-body strong{font-size:15px;color:#f2fff7}.admin-nft-body span{font-size:11px;color:#89a69a}.admin-nft-body .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all}
+.admin-nft-links{display:flex;gap:14px;margin-top:4px;align-items:center}.admin-nft-links a,.admin-link-btn{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:#a6e2c2;background:none;border:0;padding:0;cursor:pointer;text-decoration:none}.admin-link-btn{color:#ffb4b4}.admin-nft-links a:hover,.admin-link-btn:hover{text-decoration:underline}
+.admin-fee .admin-badge{margin-top:8px;align-self:flex-start}.admin-fee .admin-msg{margin-top:10px}

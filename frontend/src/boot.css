@@ -1,0 +1,17 @@
+.boot-screen{position:fixed;inset:0;z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;background:radial-gradient(ellipse at 50% 48%,#2a376f 0%,#1e2a58 42%,#151c42 100%);color:#dfe3f7;transition:opacity .55s ease;pointer-events:all}
+.boot-screen:before{content:'';position:absolute;inset:0;background-image:linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(90deg,#ffffff06 1px,transparent 1px);background-size:6px 6px;opacity:.45;pointer-events:none}
+.boot-fading{opacity:0;pointer-events:none}
+.boot-stage{position:relative;display:grid;place-items:center;height:150px}
+.boot-bucket{width:124px;height:124px;image-rendering:pixelated;animation:boot-bob 1.9s ease-in-out infinite;filter:drop-shadow(0 6px 0 #0d1333aa)}
+.boot-shadow{position:absolute;bottom:4px;width:84px;height:9px;background:#0f1538;border-radius:50%;opacity:.55;animation:boot-shadow 1.9s ease-in-out infinite}
+.boot-sparkle{animation:boot-sparkle 1.4s steps(2) infinite}
+.boot-fish{animation:boot-fish 1.9s ease-in-out infinite}
+.boot-text{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:13px;letter-spacing:.02em;color:#e3e6f5;margin:0;text-shadow:0 1px 0 #0d1333}
+.boot-bar{width:280px;height:16px;border:2px solid #4a569a;background:#10163a;box-shadow:inset 0 0 0 2px #0a0f2c,0 0 0 1px #0a0f2c;position:relative;overflow:hidden}
+.boot-bar>i{display:block;height:100%;background:linear-gradient(90deg,#43c9b8,#6ef0dc);box-shadow:0 0 12px #5fe3c8aa;transition:width .12s linear}
+.boot-bar:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 6px,#0a0f2c66 6px 8px);pointer-events:none}
+@keyframes boot-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes boot-shadow{0%,100%{transform:scaleX(1);opacity:.55}50%{transform:scaleX(.82);opacity:.35}}
+@keyframes boot-sparkle{0%{opacity:1}100%{opacity:.25}}
+@keyframes boot-fish{0%,100%{transform:translateY(0)}50%{transform:translateY(-.6px)}}
+@media(prefers-reduced-motion:reduce){.boot-bucket,.boot-shadow,.boot-sparkle,.boot-fish{animation:none}}

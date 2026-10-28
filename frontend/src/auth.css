@@ -1,0 +1,12 @@
+.wallet-lock{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:20px;background:rgba(9,25,34,.78);backdrop-filter:blur(6px);animation:rise .3s both}
+.wallet-lock-card{display:flex;flex-direction:column;align-items:center;gap:12px;max-width:380px;padding:30px 26px;text-align:center;background:#f1f0df;border:2px solid #d0d6b7;border-radius:4px;color:#284a44;box-shadow:0 0 0 5px #486455,10px 12px 0 #07192a9e}
+.wallet-lock-card svg{color:#3f744d}
+.wallet-lock-card strong{font-family:var(--pixel);font-size:12px;letter-spacing:.04em}
+.wallet-lock-card p{margin:0;font-size:13px;line-height:1.6;color:#55705f}
+.wallet-lock-primary{display:inline-flex;align-items:center;gap:8px;margin-top:6px;padding:12px 20px;border:1px solid #f2d58c;border-radius:2px;background:linear-gradient(180deg,#f6dfa4,#edc777);color:#25443b;font-weight:800;box-shadow:0 3px 0 #a87935;transition:transform .15s,filter .15s}
+.wallet-lock-primary:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.wallet-lock-primary:disabled{opacity:.6}
+.wallet-lock-secondary{display:inline-flex;align-items:center;gap:6px;background:none;border:0;color:#6d8964;font-size:12px;text-decoration:underline;cursor:pointer}
+.footer-logout{color:#f3d7c6}
+.username-dialog>button:last-child{display:none}.username-form{display:flex;flex-direction:column;gap:14px}.username-input{height:50px;background:#fbfaee;border:2px solid #a9c19f;border-radius:2px;color:#2a5148;font-family:'DM Sans',sans-serif;font-weight:600;font-size:17px;text-align:center;padding:0 14px;transition:border-color .15s,box-shadow .15s}.username-input:focus{outline:none;border-color:#5d8a6a;box-shadow:0 0 0 3px #dce6cc}.username-input::placeholder{color:#a3b09b}
+.entry-price{display:flex;flex-direction:column;align-items:center;gap:4px}.entry-price strong{font-family:var(--pixel);font-size:26px;color:#2a5148}.entry-price span{font-size:11px;color:#6f8a74}
